@@ -51,12 +51,6 @@ a:hover, #header.nav-solid nav a:hover {
 /*------------------------------------------------------------------------------------------*/
 
 
-/* Transparent Navigation Color on a Banner */
-
-#header nav a, #header i {
-    color:#ffffff;
-}
-
 
 /* Navigation Colors when the Navigation is sticky and solid */ 
 
@@ -164,7 +158,7 @@ body {
 
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:62px;
+    font-size:70px;
     line-height:60px;
     font-weight:800;
     color: #ffffff;
