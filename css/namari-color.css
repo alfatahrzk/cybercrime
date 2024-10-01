@@ -21,10 +21,6 @@ body {
 
 /* Default Link Color */
 
-a, .la-ball-triangle-path {
-    color:#d2b356;
-}
-
 a:hover, #header.nav-solid nav a:hover {
     color:#d2b356;
 }
