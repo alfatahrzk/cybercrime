@@ -215,7 +215,7 @@ h2 {
 
 h3 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 30px; 
+    font-size: 50px; 
     font-weight:700;
     color:#111;
 }
@@ -309,11 +309,12 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:12px;
     font-weight:normal;
-    color:#999;
+    color:#000;
+    background-color: #999;
 }
 
 /* Footer Icon Color */
 
 #landing-footer i {
-    color:#999;
+    color:#000;
 }
