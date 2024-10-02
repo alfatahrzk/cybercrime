@@ -153,10 +153,10 @@ body {
 /* Banner Typography */
 
 #banner h1 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: 'Montserrat', sans-serif, Helvetica;
     font-size:70px;
     line-height:60px;
-    font-weight:800;
+    font-weight:550;
     color: #ffffff;
 }
 
