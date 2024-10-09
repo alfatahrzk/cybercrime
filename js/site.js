@@ -70,29 +70,7 @@ $(window).load(function () {
 		$(window).enllax();
 	}
 
-	/* Cek Rekening */
-	function cekRekening() {
-		const rekening = document.getElementById('input1').value;
-		let isPenipuan = rekening === '1234567890';
-		const hasilCek = document.getElementById('hasilCek');
-		hasilCek.textContent = isPenipuan ? "Nomor rekening terindikasi sebagai penipuan!" : "Nomor rekening aman.";
-	}
-
-	/* Cek Password */
-	function cekPassword() {
-		const password = document.getElementById('input2').value;
-		if (password.length < 8) {
-			alert('Password terlalu pendek. Minimal 8 karakter.');
-		} else if (!/[A-Z]/.test(password)) {
-			alert('Password harus mengandung minimal 1 huruf kapital.');
-		} else if (!/[a-z]/.test(password)) {
-			alert('Password harus mengandung minimal 1 huruf kecil.');
-		} else if (!/\d/.test(password)) {
-			alert('Password harus mengandung minimal 1 angka.');
-		} else {
-			alert('Password cukup kuat.');
-		}
-	}
+	
 
 	/* Data Grafik */
 	const labels = ['Penipuan Online', 'Ancaman Kekerasan', 'Pencemaran Nama Baik', 'Ancaman Pencemaran'];
@@ -125,3 +103,5 @@ $(window).load(function () {
 		config
 	);
 });
+
+
