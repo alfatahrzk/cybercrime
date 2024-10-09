@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporkan Penipuan</title>
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+    <div class="guide">
+        <h2>Panduan Melaporkan Kasus</h2>
+        <p>Terima kasih telah melaporkan kasus penipuan online kepada kami. Untuk membantu kami memproses laporan Anda dengan cepat dan efektif, mohon lengkapi formulir di bawah ini dengan informasi yang akurat dan detail.</p>
+        <p><strong>Tips Melengkapi Laporan:</strong></p>
+        <ul>
+            <li>Semakin detail informasi yang Anda berikan, semakin mudah kami melakukan investigasi.</li>
+            <li>Simpan semua bukti yang terkait dengan kasus penipuan, seperti screenshot percakapan, bukti pembayaran, atau informasi akun pelaku.</li>
+            <li>Laporkan kasus ini juga ke pihak kepolisian setempat.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Pengaduan Kejahatan Siber: Kewaspadaan Anda Berarti</h1>
+        <form>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="jenis_kasus">Jenis Kasus:</label>
+            <select id="jenis_kasus" name="jenis_kasus" required>
+                <option value="">Pilih Jenis Kasus</option>
+                <option value="penipuan_online">Penipuan Online</option>
+            </select>
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea id="deskripsi" name="deskripsi" required></textarea>
+
+            <label for="bukti">Bukti:</label>
+            <input type="file" id="bukti" name="bukti" required>
+            <button type="submit">Kirim Laporan</button>
+            </form>
+    </div>
+    <script src="js/form-js.js"></script>
+</body>
+</html>
