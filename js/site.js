@@ -50,7 +50,7 @@ $(document).ready(function () {
 
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
-		}, 750, 'swing'); // Durasi animasi 500ms dengan efek 'swing'
+		}, 700, 'swing'); // Durasi animasi 500ms dengan efek 'swing'
 	});
 });
 
