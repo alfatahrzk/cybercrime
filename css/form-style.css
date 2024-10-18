@@ -51,6 +51,17 @@ form {
     flex-wrap: row;
 }
 
+.form-group {
+    margin-bottom: 15px;
+}
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+.error-message {
+    color: red;
+}
+
 label {
     margin-bottom: 5px;
 }
