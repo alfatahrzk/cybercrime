@@ -104,4 +104,72 @@ $(window).load(function () {
 	);
 });
 
+// Fungsi untuk mengecek rekening
+function cekRekening() {
+	const rekening = document.getElementById('input1').value;
+	const hasilCek = document.getElementById('hasilCek');
+	let tipu1 = 81818181;
+	let tipu2 = 21212121;
+	let N = 100;
+	let randomInt = Math.floor(Math.random() * (N + 1));
 
+	if (rekening === "") {
+		hasilCek.innerHTML = "Nomor rekening tidak boleh kosong!";
+		hasilCek.style.color = "red";
+	} else if (rekening == tipu1 || rekening == tipu2) {
+		hasilCek.innerHTML = "Nomor rekening terindikasi penipuan, dilaporkan " + randomInt + " kali.";
+		hasilCek.style.color = "red";
+	} else {
+		hasilCek.innerHTML = "Nomor rekening belum pernah dilaporkan.";
+		hasilCek.style.color = "green";
+	}
+}
+
+function cekPassword() {
+	const password = document.getElementById('input2').value;
+	const hasilPassword = document.getElementById('hasilPassword');
+	const progressBar = document.getElementById('passwordStrength');
+	let strength = 0;
+
+	// Menghitung kekuatan password
+	if (password.length >= 6) strength += 1;
+	if (/[A-Z]/.test(password)) strength += 1;
+	if (/[0-9]/.test(password)) strength += 1;
+	if (/[@$!%*?&#]/.test(password)) strength += 1; // Karakter spesial
+
+	// Menentukan kekuatan password dan memperbarui progress bar
+	if (password === "") {
+		hasilPassword.innerHTML = "Password tidak boleh kosong!";
+		hasilPassword.style.color = "red";
+		progressBar.style.width = "0%";
+		progressBar.style.backgroundColor = "red";
+	} else {
+		hasilPassword.innerHTML = "";
+		switch (strength) {
+			case 1:
+				hasilPassword.innerHTML = "Password sangat lemah.";
+				hasilPassword.style.color = "red";
+				progressBar.style.width = "25%";
+				progressBar.style.backgroundColor = "red";
+				break;
+			case 2:
+				hasilPassword.innerHTML = "Password lemah.";
+				hasilPassword.style.color = "orange";
+				progressBar.style.width = "50%";
+				progressBar.style.backgroundColor = "orange";
+				break;
+			case 3:
+				hasilPassword.innerHTML = "Password sedang.";
+				hasilPassword.style.color = "#D4A017";
+				progressBar.style.width = "75%";
+				progressBar.style.backgroundColor = "yellow";
+				break;
+			case 4:
+				hasilPassword.innerHTML = "Password kuat.";
+				hasilPassword.style.color = "green";
+				progressBar.style.width = "100%";
+				progressBar.style.backgroundColor = "green";
+				break;
+		}
+	}
+}

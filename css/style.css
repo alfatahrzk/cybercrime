@@ -2329,6 +2329,22 @@ blockquote {
             border-radius: 4px;
             color : #fff;
             background-color: #1900ff;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            width: 59%;
+            background-color: #e0e0e0;
+            height: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .progress {
+            height: 100%;
+            border-radius: 5px;
+            width: 0%;
+            background-color: red;
+            transition: width 0.3s;
         }
 
 
